@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.css">
+    </head>
+    <body class="CoolBodyCentered">
+        <h1>
+            Benvenuto nel sito di Programmazione
+        </h1>
+        </br></br></br>
+        <table align="center">
+            <tr>
+                <td>
+                    <div class="alert alert-info" role="alert">
+                        <h1>🤨Sei un intruso o sei l'admin?🤨</h1>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        Inserisci nickname
+        </br>
+        <input type="text" value="" id="nickname">
+        </br>
+        Inserisci password
+        </br>
+        <input type="text" value="" id="password">
+        </br>
+        </br>
+        </br>
+        <link id="0" href="AccessoConsentito.html">
+        <button type="button" class="btn btn-white-success" onclick="verify()">Verifica</button>
+        <script>
+            function verify()
+            {
+                var text1 = document.getElementById("nickname").value;
+                var text2 = document.getElementById("password").value;
+                if(text1=="Molinugget")
+                {
+                    if(text2=="GG")
+                    window.open("AccessoConsentito.html");
+                }
+                document.getElementById("nickname").value="";
+                document.getElementById("password").value="";
+            }
+        </script>
+    </body>
+</html>
